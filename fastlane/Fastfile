@@ -1,0 +1,8 @@
+  desc "Notarize apple app"
+  lane :signit do
+    app_path = 'dist/oxygen-1.6.0-osx-x64.dmg'
+    notarize(
+        package: app_path, # Path to package to notarize, e.g. .app bundle or disk image
+        bundle_id: "org.oxygen.ide" # Not required for .app bundles, bundle identifier to uniquely identify the package.
+    )
+  end

@@ -49,3 +49,11 @@ main.js.map
 
 .idea
 npm-debug.log.*
+
+# fastlane
+Gemfile
+Gemfile.lock
+fastlane/Appfile
+fastlane/Pluginfile
+fastlane/README.md
+fastlane/report.xml 
